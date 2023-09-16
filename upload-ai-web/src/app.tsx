@@ -22,13 +22,13 @@ export function App() {
     completion,
     isLoading,
   } = useCompletion({
-    api:'http://localhost:3333/api/complete',
+    api: 'http://localhost:3333/ai/complete',
     body: {
       videoId,
       temperature,
     },
     headers: {
-      'Content-type': 'application/json',
+      'Content-Type': 'application/json',
     },
   })
 
